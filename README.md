@@ -9,6 +9,9 @@ java -jar target\portfolioweightcalculator-0.0.1-SNAPSHOT.jar <input file>
 Example usage:
 
 java -jar target\portfolioweightcalculator-0.0.1-SNAPSHOT.jar testinput.txt
+
+Example output to the command line:
+
 A,D,0.167
 A,E,0.083
 A,F,0.083
