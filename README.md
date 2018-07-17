@@ -12,13 +12,13 @@ java -jar target\portfolioweightcalculator-0.0.1-SNAPSHOT.jar testinput.txt
 
 Example output to the command line:
 
-A,D,0.167
-A,E,0.083
-A,F,0.083
-A,G,0.333
-A,H,0.333
-B,D,0.500
-B,E,0.250
-B,F,0.250
-C,G,0.500
-C,H,0.500
+A,D,0.167\n
+A,E,0.083\n
+A,F,0.083\n
+A,G,0.333\n
+A,H,0.333\n
+B,D,0.500\n
+B,E,0.250\n
+B,F,0.250\n
+C,G,0.500\n
+C,H,0.500\n
