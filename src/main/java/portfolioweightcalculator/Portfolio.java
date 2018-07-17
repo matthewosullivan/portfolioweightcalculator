@@ -7,9 +7,14 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
 public class Portfolio {
+	
+	private static final Logger logger = Logger.getLogger(Portfolio.class.getName());
+	
 	Map<String,TreeNode> treeNodes = new HashMap<>();
 	
 	public Portfolio buildFromFile(String filename) {
@@ -19,7 +24,7 @@ public class Portfolio {
 				build(values[0], values[1], Integer.parseInt(values[2]));
 			});
 		} catch (IOException e) {
-			e.printStackTrace();
+			logger.log(Level.WARNING, "Failed to read fund structure from csv file", e);
 		}
 		return this;
 	}
